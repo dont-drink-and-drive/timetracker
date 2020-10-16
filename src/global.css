@@ -26,6 +26,7 @@ html {
 
 body {
   margin: 0;
+  color: var(--font-color-primary);
   font-family: var(--font-family);
 }
 
@@ -35,5 +36,6 @@ select,
 optgroup,
 textarea {
   margin: 0;
+  color: var(--font-color-primary);
   font-family: var(--font-family);
 }

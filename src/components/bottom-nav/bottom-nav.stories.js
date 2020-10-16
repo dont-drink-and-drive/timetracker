@@ -1,4 +1,3 @@
-import { createElement } from "../../utils/element";
 import { createBottomNavElement } from "./bottom-nav";
 
 export default {

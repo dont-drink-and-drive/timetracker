@@ -5,9 +5,40 @@ import addBtnSrc from "../../assets/add.svg";
 import pieChartBtnSrc from "../../assets/pie-chart.svg";
 
 export const createBottomNavElement = () => {
-  const bottomNav = createElement("img", {
-    src: timeBtnSrc,
+  const bottomNav = createElement("nav", {
+    className: "nav-bottom",
+    children: [
+      createElement("a", {
+        href: "#",
+        children: [
+          createElement("img", {
+            className: "nav-bottom__img",
+            src: timeBtnSrc,
+            alt: "Overview timetracker",
+          }),
+        ],
+      }),
+      createElement("a", {
+        href: "#",
+        children: [
+          createElement("img", {
+            className: "nav-bottom__img",
+            src: addBtnSrc,
+            alt: "Add timetracker",
+          }),
+        ],
+      }),
+      createElement("a", {
+        href: "#",
+        children: [
+          createElement("img", {
+            className: "nav-bottom__img",
+            src: pieChartBtnSrc,
+            alt: "Timetracker statistics",
+          }),
+        ],
+      }),
+    ],
   });
-
   return bottomNav;
 };

@@ -24,9 +24,14 @@ export const createTaskElement = (task) => {
   const taskElement = createElement("div", {
     className: "task-card",
     children: [
-      createElement("img", {
-        src: task.iconSrc,
-        alt: task.iconAlt,
+      createElement("div", {
+        className: `task-card__icon task-card__icon--${task.labelColor}`,
+        children: [
+          createElement("img", {
+            src: task.iconSrc,
+            alt: task.iconAlt,
+          }),
+        ],
       }),
       createElement("div", {
         className: "task-card__description",

@@ -13,9 +13,13 @@ const taskInfos = [
   {
     title: "UI Design",
     label: "Work",
+    labelColor: "purple",
     iconSrc: desktopSrc,
+    iconAlt: "Work",
     time: "00:32:10",
   },
 ];
+
+// Hier foreach Funktion einfügen und Array erweitern
 
 export const task = () => createTaskElement(taskInfos[0]);

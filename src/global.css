@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
 
 *,
 *::after,
@@ -6,13 +6,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-family: "Rubik", sans-serif;
+  --font-color-primary: #fff;
+  --font-color-secondary: #bdbdbd;
+
+  --background-primary: #070417;
+  --background-secondary: #292639;
+  --action-color-1: #9b51e0;
+  --action-color-2: #ffa656;
+  --action-color-3: #fd5b71;
+  --action-color-4: #07e092;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
   margin: 0;
+  font-family: var(--font-family);
 }
 
 input,
@@ -21,5 +34,5 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--font-family);
 }

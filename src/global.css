@@ -21,10 +21,12 @@
 
 html {
   font-size: 16px;
+  background-color: var(--background-primary);
 }
 
 body {
   margin: 0;
+  color: var(--font-color-primary);
   font-family: var(--font-family);
 }
 
@@ -34,5 +36,6 @@ select,
 optgroup,
 textarea {
   margin: 0;
+  color: var(--font-color-primary);
   font-family: var(--font-family);
 }

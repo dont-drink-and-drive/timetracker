@@ -3,6 +3,13 @@ import "./tasklist.css";
 import playActionSrc from "../../assets/play.svg";
 import pauseActionSrc from "../../assets/pause.svg";
 
+// Lösung für sich ändernde Klassennamen über "Object square bracket" (s.u. colorClassNames[task.labelColor])
+
+const colorClassNames = {
+  purple: "task-card__icon--purple",
+  orange: "task-card__icon--orange",
+};
+
 export const createTaskElement = (task) => {
   const actionIcon = createElement("img", {
     src: playActionSrc,
@@ -25,7 +32,7 @@ export const createTaskElement = (task) => {
     className: "task-card",
     children: [
       createElement("div", {
-        className: `task-card__icon task-card__icon--${task.labelColor}`,
+        className: `task-card__icon ${colorClassNames[task.labelColor]}`,
         children: [
           createElement("img", {
             src: task.iconSrc,
